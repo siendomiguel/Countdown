@@ -20,7 +20,7 @@ const countDown = (deadline, elem, finalMessage) => {
 
     const timerUpdate = setInterval( () => {
         let t = getRemainTime(deadline);
-        el.innerHTML = `${t.remainDays}Día(s) - ${t.remainHours}Hora(s) - ${t.remainMinutes}Minuto(s) - ${t.remainSeconds}Segundo(s)`;
+        el.innerHTML = `${t.remainDays} Día(s) - ${t.remainHours} Hora(s) - ${t.remainMinutes} Minuto(s) - ${t.remainSeconds} Segundo(s)`;
 
         if (t.remainTime <= 1) {
             clearInterval(timerUpdate);
@@ -29,6 +29,6 @@ const countDown = (deadline, elem, finalMessage) => {
     }, 1000)
 };
 
-countDown('Jan 26 2021 22:00:05 GMT-0500', 'clock', 'Comenzamos');
+countDown('Jan 30 2021 22:00:05 GMT-0500', 'clock', 'Comenzamos');
 
 //console.log(getRemainTime('Jan 26 2021 22:00:05 GMT-0500'));
