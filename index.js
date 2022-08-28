@@ -15,6 +15,9 @@ const getRemainTime = deadline => {
     }
 };
 
+const dateInput = document.querySelector('#date');
+console.log(dateInput.value)
+
 const countDown = (deadline, elem, finalMessage) => {
     const el = document.getElementById(elem);
 
@@ -29,6 +32,6 @@ const countDown = (deadline, elem, finalMessage) => {
     }, 1000)
 };
 
-countDown('Jan 30 2021 22:00:05 GMT-0500', 'clock', 'Comenzamos');
+countDown('Sep 1 2022 22:00:05 GMT-0500', 'clock', 'Comenzamos');
 
 //console.log(getRemainTime('Jan 26 2021 22:00:05 GMT-0500'));
